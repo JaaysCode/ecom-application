@@ -3,8 +3,9 @@ services:
     container_name: ecom_postgress_container
     image: postgres:17.11-alpine3.23
     environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: jays
+      POSTGRES_PASSWORD: jays
+      POSTGRES_DB: ecomdb
       PGDATA: /data/postgres
     volumes:
       - postgres:/data/postgres
